@@ -1,0 +1,37 @@
+---
+title: "Incarceration Data"
+author: "Merek Mecham"
+date: "3/14/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("analysis.r")
+```
+
+## Introduction
+
+The U.S. incarceration system is one of the most corrupt, harmful, and racially constructed complexes in the country. We have seen people of color get incarcerated at a rate that is much higher than their white counterparts, let alone the way people of color are treated within the prison is uncomparable and unimaginable. The Vera Institute complied a data set of many different measures regarding incarceration among all races in the U.S.. For my report, I will be focusing on the imprisonment of black men and women, specifically analyzing the variable "black_prison_pop_rate", which is the prison population rate for black people. I will comparing the measures of prison population rates, as well as jail population rates among different races. 
+
+## Summary
+
+The the depth of this dataset has allowed for particular calculations regarding certain variables, specifically the comparison of the prison rate among different races. For black individuals, in 2018, the state with the highest jail population was California, with a population of **5024**. In the same year, the lowest population of black individuals in prison was 0. Within the entirety of te data set, with a range in years from 1970 to 2018, the highest population of black individuals in jail at any point in time was **13,143** in 1993 within Los Angeles. The lowest population of black individuals in jail at any point of time is also 0. A final value that is worth noting, is that when the jail population for black individuals was 13,143, the black population in Los Angeles was **623,040**, which means **2.1%** of the black population in Los Angeles in 1993 was in jail. 
+
+
+```{r chart_one, echo=FALSE}
+plot(chart_one)
+```
+
+This chart exemplifies the different jail population rates among all races included in the data set. By including this chart, I was able to visually show these difference and trends in jail population rates. It is clear from the chart that latinx individuals have the highest jail population rate, while black individuals have the second highest on average.
+
+``` {r chart_two, echo=FALSE}
+plot(chart_two)
+```
+
+This chart visually compares the difference between total jail populations, and the population of black people in jail. This chart was important to display because it is a clear issue that black individuals make up a large population in jail, despite not accounting for a large portion of the population in the country. We can clearly see that population of black people in jail is a significant amount in comparison to the total jail population. 
+
+``` {r map, echo=FALSE}
+plot(map)
+```
+
+This map visualizes the jail populations among black individuals across the country, highlighting the states with a higher black jail population in a darker color. By visualizing this, we are able to see which states have a higher population of black people in jail, and we can begin to assess the factors that are causing this, such as a higher black population in that state, or determining if the urbanacity in that state has an effect on the black jail population. 
