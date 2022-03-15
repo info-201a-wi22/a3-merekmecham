@@ -1,10 +1,9 @@
 library(ggplot2)
 library(dplyr)
 library(tidyr)
-install.packages("usdata")
 library(usdata)
 
-setwd("~/Documents/INFO201/a3-merekmecham/source/")
+setwd("/Users/merekmecham/Documents/INFO201/a3-merekmecham/")
 
 filename <- "https://raw.githubusercontent.com/vera-institute/incarceration-trends/master/incarceration_trends.csv"
 data <- read.csv(filename)

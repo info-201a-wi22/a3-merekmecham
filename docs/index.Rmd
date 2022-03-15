@@ -1,12 +1,13 @@
 ---
-title: "Incarceration Data"
+title: "Incarceration Analysis"
 author: "Merek Mecham"
 date: "3/14/2022"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-source("analysis.r")
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+source("/Users/merekmecham/Documents/INFO201/a3-merekmecham/source/analysis.r")
 ```
 
 ## Introduction
@@ -30,8 +31,9 @@ plot(chart_two)
 
 This chart visually compares the difference between total jail populations, and the population of black people in jail. This chart was important to display because it is a clear issue that black individuals make up a large population in jail, despite not accounting for a large portion of the population in the country. We can clearly see that population of black people in jail is a significant amount in comparison to the total jail population. 
 
-``` {r map, echo=FALSE}
-plot(map)
+``` {r black_map, echo=FALSE}
+plot(black_map)
 ```
 
 This map visualizes the jail populations among black individuals across the country, highlighting the states with a higher black jail population in a darker color. By visualizing this, we are able to see which states have a higher population of black people in jail, and we can begin to assess the factors that are causing this, such as a higher black population in that state, or determining if the urbanacity in that state has an effect on the black jail population. 
+
